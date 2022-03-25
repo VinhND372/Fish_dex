@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/main.css">
+    <title>Fish DEX</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon -->
+</head>
+
+<body>
+    <header id="header">
+        <a href="#" class="logo">Ocean</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="text"><span>It's time for a new</span><br>Adventure</h2>
+        <img src="./assets/images/background/bird1.png" id="bird1" alt="">
+        <img src="./assets/images/background/bird2.png" id="bird2" alt="">
+        <img src="./assets/images/background/forest.png" id="forest" alt="">
+        <a href="#scanner" id="btn">LOOKUP</a>
+        <img src="./assets/images/background/rocks.png" id="rocks" alt="">
+        <img src="./assets/images/background/water.png" id="water" alt="">
+    </section>
+
+    <!---------------------------- SCAN ------------------------------------->
+    <div id="scanner">
+        <!--------------- INPUT --------------->
+        <div class="scanner-input">
+            <form action="" class="image-processing">
+                <div class="uploadBtn">
+                    <input type="file" id="file" accept="image/*">
+                    <label for="file">
+                        <span class="material-icons">
+                            add_photo_alternate
+                        </span>&nbsp;
+                        Choose a Photo
+                    </label>
+                </div>
+                <button class="scanBtn" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    SCAN
+                </button>
+            </form>
+            <div class="show-img">
+                <img src="./assets/images/background/fish3.gif" alt="">
+            </div>
+            <div class="scanner-effect">
+                <div class="sweepRing" id="SR1"></div>
+                <div class="sweepRing" id="SR2"></div>
+                <div class="sweepRing" id="SR3"></div>
+            </div>
+        </div>
+        <!--------------- END INPUT -------------->
+
+        <!--------------- OUTPUT ----------------->
+        <div class="scanner-output">
+            <h2 class="scanName">Cá Heo</h2>
+            <div class="scanInfo">
+                <h4>Thuộc họ:&nbsp;
+                    <span>Họ cá voi đại dương Delphinidae là họ lớn nhất trong bộ cá heo và cũng là họ xuất hiện muộn
+                        nhất: khoảng 10 triệu năm trước đây, trong thế Trung Tân.</span>
+                </h4><br>
+                <h4>Môi trường sống:&nbsp;
+                    <span>Đại dương</span>
+                </h4><br>
+                <h4>Kích thước:&nbsp;
+                    <span>Kích thước của cá heo có thể từ 1,2 m (4 ft) và 40 kg (90 lb) (Cá heo Maui), cho tới 9,5 m (30
+                        ft) và 10 tấn (9,8 tấn Anh; 11 tấn Mỹ) (Cá heo đen lớn hay Cá voi sát thủ). </span>
+                </h4><br>
+                <h4>Tuổi thọ:&nbsp;
+                    <span>Không biết</span>
+                </h4>
+            </div>
+        </div>
+        <!--------------- END OUTPUT -------------->
+    </div>
+    <!------------------------------------ END SCAN ----------------------------------->
+
+    <div class="footer">BÀI LÀM 10 ĐIỂM VỀ CHỔ
+    </div>
+
+    <script src="./assets/main.js"></script>
+</body>
+
+</html>
